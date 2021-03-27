@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<script>
-		if (['2017', '2018'].includes(window.location.href.split('/')[3]))
-			window.location.replace('/OI');
+		const s = window.location.href.split('/');
+		if (['2017', '2018'].includes(s[3]))
+			window.location.replace(['/OI'].concat(s.slice(3)).join('/'));
 	</script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 	<meta charset="utf-8">
