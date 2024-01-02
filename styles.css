@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+    font-size: 100%;
+    color: #333;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: royalblue;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.container {
+    position: relative;
+    margin: 32px auto 0 auto;
+    padding: 0 12px;
+    max-width: 800px;
+    min-height: calc(100vh - 32px);
+}
+
+.title {
+    text-align: center;
+}
+
+main {
+    padding-bottom: 3.5rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 3.5rem;
+    width: calc(100% - 24px);
+    padding-top: 0.5rem;
+}
+
+.intro {
+    display: flow-root;
+    margin-top: 0;
+}
+
+.intro .portrait {
+    width: 200px;
+    float: right;
+    margin-top: 1rem;
+    margin-left: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .intro .portrait {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+}
